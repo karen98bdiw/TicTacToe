@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         btnCount = 1;
-        playerSteps = new String[]{"s1","s2","s3","s4","s5"};
+        playerSteps = new String[]{"s1","s2","s3","s4","s5","s6"};
         playerStepsCount = -1;
         playerStepsCountForBot = 0;
 
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void botStep(){
         if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("2o") > -1 && clickForBot.indexOf("s18x") == -1 && clickForBot.indexOf("s28x") == -1&&clickForBot.indexOf("s38x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("2o") > -1 && clickForBot.indexOf("s18x") == -1 && clickForBot.indexOf("s28x") == -1&&clickForBot.indexOf("s38x") == -1&&clickForBot.indexOf("s48x") == -1&&clickForBot.indexOf("s58x") == -1
                 ){
             buttonS[8].setText("O");
             buttonS[8].setEnabled(false);
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[8].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("4o") > -1 && clickForBot.indexOf("s16x") == -1 && clickForBot.indexOf("s26x") == -1&&clickForBot.indexOf("s36x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("4o") > -1 && clickForBot.indexOf("s16x") == -1 && clickForBot.indexOf("s26x") == -1&&clickForBot.indexOf("s36x") == -1&&clickForBot.indexOf("s46x") == -1&&clickForBot.indexOf("s56x") == -1
                 ){
             buttonS[6].setText("O");
             buttonS[6].setEnabled(false);
@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[6].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("1o") > -1 && clickForBot.indexOf("s19x") == -1 && clickForBot.indexOf("s29x") == -1&&clickForBot.indexOf("s39x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("1o") > -1 && clickForBot.indexOf("s19x") == -1 && clickForBot.indexOf("s29x") == -1&&clickForBot.indexOf("s39x") == -1&&clickForBot.indexOf("s49x") == -1&&clickForBot.indexOf("s59x") == -1
                 ){
             buttonS[9].setText("O");
             buttonS[9].setEnabled(false);
@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[9].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("9o") > -1 && clickForBot.indexOf("s11x") == -1 && clickForBot.indexOf("s21x") == -1&&clickForBot.indexOf("s31x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("9o") > -1 && clickForBot.indexOf("s11x") == -1 && clickForBot.indexOf("s21x") == -1&&clickForBot.indexOf("s31x") == -1&&clickForBot.indexOf("s41x") == -1&&clickForBot.indexOf("s51x") == -1
                 ){
             buttonS[1].setText("O");
             buttonS[1].setEnabled(false);
@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[1].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("6o") > -1 && clickForBot.indexOf("s14x") == -1 && clickForBot.indexOf("s24x") == -1&&clickForBot.indexOf("s34x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("6o") > -1 && clickForBot.indexOf("s14x") == -1 && clickForBot.indexOf("s24x") == -1&&clickForBot.indexOf("s34x") == -1&&clickForBot.indexOf("s44x") == -1&&clickForBot.indexOf("s54x") == -1
                 ){
             buttonS[4].setText("O");
             buttonS[4].setEnabled(false);
@@ -233,16 +233,17 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[4].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("8o") > -1 && clickForBot.indexOf("s12x") == -1 && clickForBot.indexOf("s22x") == -1&&clickForBot.indexOf("s32x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("8o") > -1 && clickForBot.indexOf("s12x") == -1 && clickForBot.indexOf("s22x") == -1&&clickForBot.indexOf("s32x") == -1&&clickForBot.indexOf("s42x") == -1&&clickForBot.indexOf("s52x") == -1
                 ){
             buttonS[2].setText("O");
             buttonS[2].setEnabled(false);
             clickForWin = clickForWin + buttonS[2].getId() + "o" + ",";
             playerStepsCountForBot++;
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[2].getId() + "o";
+            Log.e("hey2", "youuu areee right");
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("3o") > -1 && clickForBot.indexOf("s17x") == -1 && clickForBot.indexOf("s27x") == -1 && clickForBot.indexOf("s37x") == -1)
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("3o") > -1 && clickForBot.indexOf("s17x") == -1 && clickForBot.indexOf("s27x") == -1 && clickForBot.indexOf("s37x") == -1&&clickForBot.indexOf("s47x") == -1&&clickForBot.indexOf("s57x") == -1)
         {
             buttonS[7].setText("O");
             buttonS[7].setEnabled(false);
@@ -252,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[7].getId() + "o";
             return;
         }else if(
-                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("7o") > -1 && clickForBot.indexOf("s13x") == -1 && clickForBot.indexOf("s23x") == -1&&clickForBot.indexOf("s33x") == -1
+                clickForBot.indexOf("5o") > -1 && clickForBot.indexOf("7o") > -1 && clickForBot.indexOf("s13x") == -1 && clickForBot.indexOf("s23x") == -1&&clickForBot.indexOf("s33x") == -1&&clickForBot.indexOf("s43x") == -1&&clickForBot.indexOf("s53x") == -1
                 ){
             buttonS[3].setText("O");
             buttonS[3].setEnabled(false);
@@ -260,8 +261,9 @@ public class MainActivity extends AppCompatActivity {
             clickForWin = clickForWin + buttonS[3].getId() + "o" + ",";
             playerStepsCountForBot++;
             clickForBot = clickForBot + playerSteps[playerStepsCount] + buttonS[3].getId() + "o";
+
             return;
-        }if(isWin != true && playerStepsCountForBot > 1 && playerStepsCountForBot < 5) {
+        }if(isWin != true && playerStepsCountForBot > 1 && playerStepsCountForBot < 4) {
 //            for (int i = 1; i < buttonS.length; i++) {
 //                if (buttonS[i].getTag() != "nonEmpty") {
 //                    buttonS[i].setText("O");
@@ -293,9 +295,11 @@ public class MainActivity extends AppCompatActivity {
             emptyButtons[randomForBot].setEnabled(false);
             clickForWin = clickForWin + emptyButtons[randomForBot].getId() + "o" + ",";
             clickForBot = clickForBot + playerSteps[playerStepsCount] + emptyButtons[randomForBot].getId() + "o";
+            Log.e("hey","random btn is" + emptyButtons[randomForBot].getId());
             playerStepsCountForBot++;
             emptyButtonsCount = 0;
             buttonIndex = -1;
+            return;
 
         }else
         if( clickForBot.indexOf("s17x") > -1 && clickForBot.indexOf("s23x") > -1||
